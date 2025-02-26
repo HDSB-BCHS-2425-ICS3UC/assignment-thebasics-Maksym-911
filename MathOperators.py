@@ -1,5 +1,5 @@
 #Author: Maksym
-#Date Modified: Feb 26, 2025
+#Date Modified: Feb 27, 2025
 #Description: Math Operators
 import math
 
