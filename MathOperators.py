@@ -33,9 +33,11 @@ a = int(input("Please enter a value: ")) #Input
 b = int(input("Please enter b value: ")) #Input
 c = int(input("Please enter c value: ")) #Input
 
-discriminant = math.sqrt(int(b**2-4*a*c)) #Equesion
-
-print("Discriminant = "+ str(discriminant)) #Output
+if a == 0: #Error check
+    print("Error, a can't be negative")
+else:
+    discriminant = math.sqrt(int(b**2-4*a*c)) #Equesion
+    print("Discriminant = "+ str(discriminant)) #Output
 
 #Volume of the cone
 print("This program will help you to find volume of the cone!") #Explanation
@@ -44,23 +46,24 @@ print("So I just need some information from you")
 r = float(input("Please enter rarius of the cone: ")) #Input
 h = float(input("Please enter height of the cone: ")) #Input
 
-cone_volume = float(math.pi*h*r**2/3) #Equesion
-
-volume_rounded = round(cone_volume, 2) #Rounding to 2 decimal places
-
-print("Volume = "+ str(volume_rounded) + " units") #Output
+if r <= 0 or h <= 0: #Error check
+    print("Error")
+else:
+    cone_volume = float(math.pi*h*r**2/3) #Equesion
+    volume_rounded = round(cone_volume, 2) #Rounding to 2 decimal places
+    print("Volume = "+ str(volume_rounded) + " units") #Output
 
 #Volume of the sphere
 print("This program will help you to find volume of the sphere!")
 print("So I just need to know rarius")
 
 r = float(input("Please enter rarius of the cone: ")) #Input
-
-sphere_volume = float(4/3*math.pi*r**3) #Equesion
-
-volume_rounded = round(sphere_volume, 2) #Rounding to 2 decimal places
-
-print("Volume = " + str(volume_rounded) + " units") #Output
+if r <= 0: #Error check
+    print("Error, radius can't be negative or equel to 0")
+else:
+    sphere_volume = float(4/3*math.pi*r**3) #Equesion
+    volume_rounded = round(sphere_volume, 2) #Rounding to 2 decimal places
+    print("Volume = " + str(volume_rounded) + " units") #Output
 
 #Surface area of the cylinder
 print("This program will help you to find surface area of the cylinder!")
@@ -69,11 +72,12 @@ print("So I just need some information from you")
 r = float(input("Please enter rarius of the cylinder: ")) #Input
 h = float(input("Please enter height of the cylinder: ")) #Input
 
-cylinder_sa = float(2*math.pi*r**2 + 2*math.pi*r*h) #Equesion
-
-sa_rounded = round(cylinder_sa, 2) #Rounding to 2 decimal places
-
-print("Volume = " + str(sa_rounded) + " units") #Output
+if r <= 0 or h <= 0: #Error check
+    print("Error")
+else:
+    cylinder_sa = float(2*math.pi*r**2 + 2*math.pi*r*h) #Equesion
+    sa_rounded = round(cylinder_sa, 2) #Rounding to 2 decimal places
+    print("Volume = " + str(sa_rounded) + " units") #Output
 
 #Surface area of the triangular prism
 print("This program will help you to find surface area of the triangular prism!")
@@ -82,8 +86,9 @@ print("So I just need some information from you")
 b = float(input("Please enter base of the prism: "))   #Input
 l = float(input("Please enter length of the prism: ")) #Input
 
-prism_sa = float(2*(math.sqrt(3)/4*b**2)+3*b*l) #Equesion
-
-sa_rounded = round(prism_sa, 2) #Rounding to 2 decimal places
-
-print("Surface area = " + str(sa_rounded) + " units") #Output
+if b <= 0 or l <= 0: #Error check
+    print("Error")
+else:
+    prism_sa = float(2*(math.sqrt(3)/4*b**2)+3*b*l) #Equesion
+    sa_rounded = round(prism_sa, 2) #Rounding to 2 decimal places
+    print("Surface area = " + str(sa_rounded) + " units") #Output
