@@ -37,7 +37,7 @@ if a == 0: #Error check
     print("Error, a can't be negative")
 else:
     discriminant = math.sqrt(int(b**2-4*a*c)) #Equesion
-    print("Discriminant = "+ str(discriminant)) #Output
+    print(f"Discriminant = {(discriminant)}") #Output
 
 #Volume of the cone
 print("This program will help you to find volume of the cone!") #Explanation
@@ -51,7 +51,7 @@ if r <= 0 or h <= 0: #Error check
 else:
     cone_volume = float(math.pi*h*r**2/3) #Equesion
     volume_rounded = round(cone_volume, 2) #Rounding to 2 decimal places
-    print("Volume = "+ str(volume_rounded) + " units") #Output
+    print(f"Volume = {(volume_rounded)} units\u00b3") #Output
 
 #Volume of the sphere
 print("This program will help you to find volume of the sphere!")
@@ -61,9 +61,9 @@ r = float(input("Please enter rarius of the cone: ")) #Input
 if r <= 0: #Error check
     print("Error, radius can't be negative or equel to 0")
 else:
-    sphere_volume = float(4/3*math.pi*r**3) #Equesion
+    sphere_volume = float((4/3)*math.pi*r**3) #Equesion
     volume_rounded = round(sphere_volume, 2) #Rounding to 2 decimal places
-    print("Volume = " + str(volume_rounded) + " units") #Output
+    print(f"Volume = {(volume_rounded)} units\u00b3") #Output
 
 #Surface area of the cylinder
 print("This program will help you to find surface area of the cylinder!")
@@ -77,18 +77,18 @@ if r <= 0 or h <= 0: #Error check
 else:
     cylinder_sa = float(2*math.pi*r**2 + 2*math.pi*r*h) #Equesion
     sa_rounded = round(cylinder_sa, 2) #Rounding to 2 decimal places
-    print("Volume = " + str(sa_rounded) + " units") #Output
+    print(f"Surface area = {(sa_rounded)} units\u00b3") #Output
 
 #Surface area of the triangular prism
-print("This program will help you to find surface area of the triangular prism!")
+print("This program will help you to find the surface area of a triangular prism!")
 print("So I just need some information from you")
 
-b = float(input("Please enter base of the prism: "))   #Input
-l = float(input("Please enter length of the prism: ")) #Input
+b = float(input("Please enter the base of the prism: "))   # Input
+l = float(input("Please enter the length of the prism: ")) # Input
 
-if b <= 0 or l <= 0: #Error check
-    print("Error")
+if b <= 0 or l <= 0:  # Error check
+    print("Error: The base and length must be greater than zero!")
 else:
-    prism_sa = float(2*(math.sqrt(3)/4*b**2)+3*b*l) #Equesion
-    sa_rounded = round(prism_sa, 2) #Rounding to 2 decimal places
-    print("Surface area = " + str(sa_rounded) + " units") #Output
+    prism_sa = 2 * (math.sqrt(3) / 4) * b**2 + 3 * b * l  # Equation
+    sa_rounded = round(prism_sa, 2)  # Rounding to 2 decimal places
+    print(f"Surface area = {sa_rounded} units\u00b2")  # Output
