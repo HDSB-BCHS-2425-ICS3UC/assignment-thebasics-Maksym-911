@@ -77,7 +77,7 @@ if r <= 0 or h <= 0: #Error check
 else:
     cylinder_sa = float(2*math.pi*r**2 + 2*math.pi*r*h) #Equesion
     sa_rounded = round(cylinder_sa, 2) #Rounding to 2 decimal places
-    print(f"Surface area = {(sa_rounded)} units\u00b3") #Output
+    print(f"Surface area = {(sa_rounded)} units\u00b2") #Output
 
 #Surface area of the triangular prism
 print("This program will help you to find the surface area of a triangular prism!")
